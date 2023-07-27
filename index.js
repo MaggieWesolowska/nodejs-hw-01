@@ -1,7 +1,6 @@
 const contacts = require('./contacts');
 const { program } = require('commander');
 
-// const program = new Command();
 program
   .option('-a, --action <type>', 'choose action')
   .option('-i, --id <type>', 'user id')
@@ -47,10 +46,5 @@ const invokeAction = async ({
       console.warn('Unknown action type!');
   }
 };
-
-// program.parse();
-
-// const option = program.opts();
-// invokeAction(option);
 
 invokeAction(argv);
