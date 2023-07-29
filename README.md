@@ -1,6 +1,6 @@
 # nodejs-hw-01
 
-photo: action list:
-![action list][def]
-
-[def]: image-1.png
+https://ibb.co/9TCYNH1
+https://ibb.co/bB6Kxv4
+https://ibb.co/0VNKgG4
+https://ibb.co/k0DbPh8
