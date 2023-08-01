@@ -21,10 +21,12 @@ const invokeAction = async ({
   switch (action) {
     case 'list':
       const allContacts = await contacts.listContacts();
+      console.log('Table with all contacts:');
       console.table(allContacts);
       break;
     case 'get':
       const oneContact = await contacts.getContactById(id);
+      console.log('Contact selected:');
       console.log(oneContact);
       break;
     case 'add':
@@ -33,12 +35,14 @@ const invokeAction = async ({
         email,
         phone,
       });
+      console.log('New contact created:');
       console.log(newContact);
       break;
     case 'remove':
       const removeContact = await contacts.removeContact(
         id
       );
+      console.log('Contact has been removed:');
       console.log(removeContact);
       break;
 
